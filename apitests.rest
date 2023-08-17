@@ -1,0 +1,107 @@
+GET http://localhost:3000/api/products
+
+####
+GET http://localhost:3000/api/products/20
+
+###
+GET http://localhost:3000/api/sellers
+
+###
+GET http://localhost:3000/api/buyers
+
+###
+GET http://localhost:3000/api/orders
+
+
+###
+POST http://localhost:3000/api/orders
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InF1aW5jeS5uYnNhQGdtYWlsLmNvbSIsImlkIjoiNjRiNDk5OTliZjhmOWE4YzBmMzYzN2JjIiwiaWF0IjoxNjkyMjYzNjg2LCJleHAiOjE2OTIyNjcyODZ9.Z9OGFTX9epfUMfZh5Rv3BFP926I9UKS40__hjWOACz4
+
+{
+    "buyer":"quincy.nbsa@gmail.com",
+    "purchases":[{"id": 1689702114250, "numberOrdered": 1}, {"id": 1689703266677, "numberOrdered": 2}]
+}
+
+###
+POST http://localhost:3000/api/buyers
+Content-Type: application/json
+
+{
+    "firstname":"Quincy",
+    "lastname":"Smiht",
+    "email":"quincy.nbsa@gmail.com",
+    "password":"barrybonds"
+}
+
+
+###
+POST http://localhost:3000/api/admin
+Content-Type: application/json
+
+{
+    "username":"Nana",
+    "password":"salainen"
+}
+
+###
+POST http://localhost:3000/api/adminlogin
+Content-Type: application/json
+
+{
+     "username":"Nana",
+    "password":"salainen"
+}
+
+###
+POST http://localhost:3000/api/buyerslogin
+Content-Type: application/json
+
+{
+    "email":"quincy.nbsa@gmail.com",
+    "password":"barrybonds"
+}
+
+
+###
+POST http://localhost:3000/api/sellerslogin
+Content-Type: application/json
+
+{
+    "email":"ken.nbsa@gmail.com",
+    "password":"barrynofnds"
+}
+
+###
+POST http://localhost:3000/api/sellers
+Content-Type: application/json
+
+{
+    "firstname":"Keny",
+    "storename":"Keny's Store",
+    "lastname":"Smiht",
+    "email":"ken.nbsa@gmail.com",
+    "password":"barrynofnds"
+}
+
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imtlbi5uYnNhQGdtYWlsLmNvbSIsImlkIjoiNjRiNGFkNDIyY2UyZmNjMTFmNjE3YjBmIiwiaWF0IjoxNjg5NTYzNjAxLCJleHAiOjE2ODk1NjcyMDF9.Hd5HMtINPUiVUYfl9qV2nt-wRoPpFiR3M4nGa0rxjrE
+
+{
+    "productname": "Corolla 23",
+    "productdescription": "2024 nfdfd dfdf",
+    "numberinstock": 17,
+    "producttype": "Sedan",
+    "productbrand": "Toyota",
+    "image": "@C:/projects/portfolio/persol/lemart/src/assets/images/ford-8.svg",
+    "price": 250,
+    "sellerId":"64b4ad422ce2fcc11f617b0f"
+    
+}
+
+
+###
+GET http://localhost:3000/api/buyers
