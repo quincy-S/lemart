@@ -23,6 +23,7 @@ mongoose
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static("dist"));
 app.use("/api/admin", adminRouter);
 app.use("/api/adminlogin", adminLoginRouter);
 app.use("/api/orders", ordersRouter);
